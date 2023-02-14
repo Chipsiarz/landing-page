@@ -76,3 +76,30 @@
     margin-top: -20px;
   }
 }
+
+@media (max-width: 1600px) {
+  .menu > div > ul > li {
+    margin-left: 2rem;
+  }
+  .menu > div > ul > li > a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .menu > div > ul > li {
+    margin-left: 1rem;
+  }
+  .menu > div > ul > li > a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu > div > ul > li > a {
+    font-size: 2rem;
+  }
+  .toggler:checked ~ .menu {
+    width: 100%;
+  }
+}
