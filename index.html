@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css?v1" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="styleMobile.css" />
   </head>
   <body>
     <nav class="navBar" id="navBar">
@@ -15,10 +18,10 @@
         <div class="menu">
           <div>
             <ul>
-              <li><a href="#">Strona Główna</a></li>
-              <li><a href="#">Oferty i Promocje</a></li>
-              <li><a href="#">Serwis</a></li>
-              <li><a href="#">Kontakt</a></li>
+              <li><a href="#" class="navA">Strona Główna</a></li>
+              <li><a href="#" class="navA">Oferty i Promocje</a></li>
+              <li><a href="#" class="navA">Serwis</a></li>
+              <li><a href="#" class="navA">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -27,7 +30,7 @@
     </nav>
 
     <section id="slideSection" class="slideSection">
-      <video playsinline autoplay muted loop poster="polina.jpg" id="video">
+      <video playsinline autoplay muted loop poster="" id="video">
         <source src="Videos/1.mp4" type="video/mp4" />
       </video>
       <div id="text" class="text">Wygoda</div>
@@ -51,7 +54,7 @@
         </div>
       </div>
       <div class="rightSide">
-        <div style="color: white; padding-right: 5%">
+        <div style="color: white; padding-right: 5%" class="orderTwo">
           <h2>Nagłówek 2</h2>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
           similique magni modi earum. Aliquid veniam ea, eius optio praesentium
@@ -64,7 +67,12 @@
           dicta, officia ipsam amet numquam qui repellat eum reprehenderit, iure
           consequuntur ducimus ab blanditiis deserunt voluptatibus deleniti!
         </div>
-        <img src="Images/quantity.jpeg" width="40%" height="40%" />
+        <img
+          src="Images/quantity.jpeg"
+          class="order"
+          width="40%"
+          height="40%"
+        />
       </div>
       <div class="leftSide">
         <img src="Images/reliability.jpeg" width="40%" height="40%" />
@@ -83,7 +91,7 @@
         </div>
       </div>
       <div class="rightSide">
-        <div style="color: white; padding-right: 5%">
+        <div style="color: white; padding-right: 5%" class="orderTwo">
           <h2>Nagłówek 4</h2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
           distinctio dolorem totam possimus iste quidem maxime sint! Ducimus
@@ -96,7 +104,12 @@
           dolorum expedita officia sint explicabo! Cumque hic possimus sapiente
           porro et, incidunt culpa assumenda itaque doloremque.
         </div>
-        <img src="Images/security.jpeg" width="40%" height="40%" />
+        <img
+          src="Images/security.jpeg"
+          class="order"
+          width="40%"
+          height="40%"
+        />
       </div>
       <div class="scroll-container">
         <a href="#top"><i class="bi bi-arrow-up-circle"></i></a>

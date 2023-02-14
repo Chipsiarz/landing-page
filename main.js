@@ -81,34 +81,28 @@ const keyChangeSlide = (e) => {
 
 const sellProducts = () => {
   productsInterval = setInterval(() => {
-    countOne += 50;
-    counterOne.textContent = `${countOne}`;
-    if (countOne >= 23000) {
-      clearInterval(productsInterval);
-      countOne = 23000;
-    }
+    if (countOne < 23000) {
+      countOne += 50;
+      counterOne.textContent = `${countOne}`;
+    } else clearInterval(productsInterval);
   }, 1);
 };
 
 const happyClients = () => {
   clientsInterval = setInterval(() => {
-    countTwo += 1;
-    counterTwo.textContent = `${countTwo}%`;
-    if (countTwo >= 99) {
-      clearInterval(clientsInterval);
-      countOne = 99;
-    }
+    if (countTwo < 99) {
+      countTwo += 1;
+      counterTwo.textContent = `${countTwo}%`;
+    } else clearInterval(clientsInterval);
   }, 35);
 };
 
 const dealers = () => {
   dealersInterval = setInterval(() => {
-    countThree += 10;
-    counterThree.textContent = `${countThree}`;
-    if (countThree >= 1000) {
-      clearInterval(dealersInterval);
-      countThree = 1000;
-    }
+    if (countThree < 1000) {
+      countThree += 10;
+      counterThree.textContent = `${countThree}`;
+    } else clearInterval(dealersInterval);
   }, 50);
 };
 
